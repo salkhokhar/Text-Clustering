@@ -23,3 +23,34 @@ To run this notebook, you need Python 3 and the following libraries. You can ins
 ```bash
 pip install datasets nltk pandas scikit-learn matplotlib wordcloud transformers torch
 ```
+
+## Output
+
+After running the notebook, you will obtain several files and visualizations that summarize the performance and bias analysis of the various models. These include:
+
+- **CSV Files:**  
+  - `model_performance_metrics.csv`: Contains evaluation metrics (accuracy, precision, recall, F1-score) for each model and configuration.  
+  - Prediction result files (e.g., `naive_bayes_with_tfidf_results.csv`, `kNN_with_BOW_results.csv`, `bert_predictions.csv`, etc.) for detailed analysis of model outputs.  
+  - `bias_test_metrics.csv`: Summarizes metrics from tests on bias-modified datasets.
+
+- **Visualization Outputs:**  
+  - Bar charts displaying the most frequent unigrams and bigrams in the preprocessed abstracts.  
+  - Confusion matrices and ROC curves for evaluating model performance.  
+  - Word clouds and n-gram frequency charts as part of error analysis.  
+  - Line graphs comparing performance across the original test set and various bias-tested datasets (e.g., Gender Bias, Age Bias).
+
+## Contributing
+
+Contributions and improvements to this project are welcome! If you find a bug, have suggestions, or would like to contribute new features, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- **Datasets:** The biomedical datasets used in this project are sourced from [Gaborandi’s datasets on Hugging Face](https://huggingface.co/Gaborandi).
+- **Tools:** Special thanks to the open-source community for providing robust libraries such as `datasets`, `nltk`, `scikit-learn`, `matplotlib`, `wordcloud`, `transformers`, and `torch`.
+
+Happy coding!
+
